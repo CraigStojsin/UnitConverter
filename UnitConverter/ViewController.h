@@ -10,16 +10,19 @@
 
 @interface ViewController : UIViewController
 
-
 @property (strong, nonatomic) IBOutlet UITextField *tempText;
 
 @property (strong, nonatomic) IBOutlet UILabel *resultLabel;
 
-
+-(IBAction)tempText:(id)sender;
 
 - (IBAction)convertTemp:(id)sender;
 
 - (IBAction)convertCelToFar:(id)sender;
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+
+
 
 @end
 
